@@ -1,74 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &1728179915229495324
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 3887129509007815522}
-    m_Modifications:
-    - target: {fileID: 88686647712765936, guid: 38249d94fba7c9d449296121ca382ed5, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 88686647712765936, guid: 38249d94fba7c9d449296121ca382ed5, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 88686647712765936, guid: 38249d94fba7c9d449296121ca382ed5, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 88686647712765936, guid: 38249d94fba7c9d449296121ca382ed5, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 88686647712765936, guid: 38249d94fba7c9d449296121ca382ed5, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 88686647712765936, guid: 38249d94fba7c9d449296121ca382ed5, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 88686647712765936, guid: 38249d94fba7c9d449296121ca382ed5, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 88686647712765936, guid: 38249d94fba7c9d449296121ca382ed5, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 88686647712765936, guid: 38249d94fba7c9d449296121ca382ed5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 88686647712765936, guid: 38249d94fba7c9d449296121ca382ed5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 88686647712765936, guid: 38249d94fba7c9d449296121ca382ed5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4469434341781119687, guid: 38249d94fba7c9d449296121ca382ed5, type: 3}
-      propertyPath: m_Name
-      value: Slider 2 Collectible
-      objectReference: {fileID: 0}
-    - target: {fileID: 7771569920883783016, guid: 38249d94fba7c9d449296121ca382ed5, type: 3}
-      propertyPath: cName
-      value: Slider 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7771569920883783016, guid: 38249d94fba7c9d449296121ca382ed5, type: 3}
-      propertyPath: cData.name
-      value: Slider 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7771569920883783016, guid: 38249d94fba7c9d449296121ca382ed5, type: 3}
-      propertyPath: onCollect.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 2
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 38249d94fba7c9d449296121ca382ed5, type: 3}
 --- !u!1001 &1728179915244187590
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3588,6 +3519,10 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 7717817823597628906, guid: e69c5db4b2240424db645091cc39dc4d, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6902505667763091165, guid: e69c5db4b2240424db645091cc39dc4d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e69c5db4b2240424db645091cc39dc4d, type: 3}
@@ -3599,6 +3534,26 @@ GameObject:
 --- !u!61 &9066733011484913512 stripped
 BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 7649429769792356526, guid: e69c5db4b2240424db645091cc39dc4d, type: 3}
+  m_PrefabInstance: {fileID: 1728179915244187590}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &4631610654729744547 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 6322336049834794853, guid: e69c5db4b2240424db645091cc39dc4d, type: 3}
+  m_PrefabInstance: {fileID: 1728179915244187590}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3705114867631963754 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2634759908878225836, guid: e69c5db4b2240424db645091cc39dc4d, type: 3}
+  m_PrefabInstance: {fileID: 1728179915244187590}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7417986391416416740 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8145394516729693730, guid: e69c5db4b2240424db645091cc39dc4d, type: 3}
+  m_PrefabInstance: {fileID: 1728179915244187590}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &248552961127176118 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1479630269152721008, guid: e69c5db4b2240424db645091cc39dc4d, type: 3}
   m_PrefabInstance: {fileID: 1728179915244187590}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &5524907221274667211 stripped
@@ -3621,21 +3576,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5001208594554478671, guid: e69c5db4b2240424db645091cc39dc4d, type: 3}
   m_PrefabInstance: {fileID: 1728179915244187590}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &5256390071273443780 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6848225235959610882, guid: e69c5db4b2240424db645091cc39dc4d, type: 3}
-  m_PrefabInstance: {fileID: 1728179915244187590}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &3887129509007815522 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2452880473848896676, guid: e69c5db4b2240424db645091cc39dc4d, type: 3}
-  m_PrefabInstance: {fileID: 1728179915244187590}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &248552961127176118 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1479630269152721008, guid: e69c5db4b2240424db645091cc39dc4d, type: 3}
-  m_PrefabInstance: {fileID: 1728179915244187590}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &108517274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3654,11 +3594,15 @@ MonoBehaviour:
   y: -1
   hasAnchor: 0
   linkTile: {fileID: 0}
+  STILE_WIDTH: 17
+  isTileCollected: 0
+  objects: {fileID: 3705114867631963754}
+  allTileMaps: {fileID: 7417986391416416740}
   sliderCollider: {fileID: 9066733011484913512}
+  houseSliderCollider: {fileID: 4631610654729744547}
   tileMapCollider: {fileID: 248552961127176118}
   borderColliders:
   - {fileID: 5524907221274667211}
   - {fileID: 1719765954179020767}
   - {fileID: 4871545984407814595}
   - {fileID: 5952745791324213129}
-  stileTileMaps: {fileID: 5256390071273443780}
