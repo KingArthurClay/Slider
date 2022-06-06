@@ -6,7 +6,7 @@ public class FactoryGrid : SGrid
 {
     public static FactoryGrid instance;
 
-    protected override void Awake() {
+    public override void Init() {
         myArea = Area.Factory;
 
         foreach (Collectible c in collectibles)
@@ -14,7 +14,7 @@ public class FactoryGrid : SGrid
             c.SetArea(myArea);
         }
 
-        base.Awake();
+        base.Init();
 
         instance = this;
     }
@@ -32,13 +32,13 @@ public class FactoryGrid : SGrid
         //SGrid.OnGridMove += (sender, e) => { Debug.Log(GetGridString()); };
     }
 
-    public override void SaveGrid() 
+    public override void Save() 
     {
-        base.SaveGrid();
+        base.Save();
     }
 
-    public override void LoadGrid()
+    public override void Load(SaveProfile profile)
     {
-        base.LoadGrid();
+        base.Load(profile);
     }
 }

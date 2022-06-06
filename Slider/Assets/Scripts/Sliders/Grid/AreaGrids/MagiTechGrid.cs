@@ -10,7 +10,7 @@ public class MagiTechGrid : SGrid
 
     [SerializeField] private STile[,] altGrid;
 
-    protected override void Awake()
+    public override void Init()
     {
         myArea = Area.MagiTech;
 
@@ -19,7 +19,7 @@ public class MagiTechGrid : SGrid
             c.SetArea(myArea);
         }
 
-        base.Awake();
+        base.Init();
 
         instance = this;
     }
@@ -32,14 +32,14 @@ public class MagiTechGrid : SGrid
         UIEffects.FadeFromBlack();
     }
 
-    public override void SaveGrid()
+    public override void Save()
     {
-        base.SaveGrid();
+        base.Save();
     }
 
-    public override void LoadGrid()
+    public override void Load(SaveProfile profile)
     {
-        base.LoadGrid();
+        base.Load(profile);
 
         // Should look into linking this into the save/load system later
         SetAltGrid(altStiles);

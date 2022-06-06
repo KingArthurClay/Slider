@@ -8,6 +8,7 @@ TagManager:
   - BlocksLight
   - Rat
   - Moss
+  - ButtonTrigger
   layers:
   - Default
   - TransparentFX
@@ -20,8 +21,8 @@ TagManager:
   - Player
   - Item
   - Rat
-  - 
-  - 
+  - NPC
+  - Raycast
   - 
   - 
   - 
@@ -44,6 +45,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: AboveTiles
+    uniqueID: 2735967853
     locked: 0
   - name: Entity
     uniqueID: 529684183
