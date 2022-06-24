@@ -27,4 +27,8 @@ public class UnitManager : MonoBehaviour {
 		friendlies = new List<Unit>();
 	}
 
+	public void tileMovedUpdate() {
+		//STFU Unity
+	}
+
 }
