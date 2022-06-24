@@ -6,8 +6,9 @@ public class SaveProfile
 {
     // profile-specific metadata
     private string profileName;
-    private float playTimeInSeconds;
     private bool completionStatus;
+    private float playTimeInSeconds;
+    private System.DateTime lastSaved;
 
     private SerializablePlayer serializablePlayer;
     private Area lastArea;
@@ -24,6 +25,7 @@ public class SaveProfile
     {
         this.profileName = profileName;
         strings["Cat"] = profileName;
+        lastArea = Area.Village;
     }
 
     #region Getters / Setters
@@ -31,6 +33,16 @@ public class SaveProfile
     public string GetProfileName()
     {
         return profileName;
+    }
+
+    public bool GetCompletionStatus()
+    {
+        return completionStatus;
+    }
+
+    public void SetCompletionStatus(bool value)
+    {
+        completionStatus = value;
     }
 
     public float GetPlayTimeInSeconds()
@@ -43,14 +55,14 @@ public class SaveProfile
         playTimeInSeconds = value;
     }
 
-    public bool GetCompletionStatus()
+    public System.DateTime GetLastSaved()
     {
-        return completionStatus;
+        return lastSaved;
     }
 
-    public void SetCompletionStatus(bool value)
+    public void SetLastSaved(System.DateTime value)
     {
-        completionStatus = value;
+        lastSaved = value;
     }
 
     public SerializablePlayer GetSerializablePlayer()
@@ -109,6 +121,8 @@ public class SaveProfile
     {
         // Responsible for going around and saving all the data
 
+        lastSaved = System.DateTime.Now;
+        SetBool("isDemoBuild", true);
         SaveSavablesData();
     }
 
@@ -199,16 +213,16 @@ public class SaveProfile
     // }
 
     /// <summary>
-    /// Returns false if bools dictionary doesn't contain "name" in keys.
+    /// Returns the value associated with "name" in keys. If no such value exists, this method returns false by defualt, but can also return true if passed as an argument 
     /// </summary>
     /// <param name="name"></param>
     /// <returns></returns>
-    public bool GetBool(string name)
+    public bool GetBool(string name, bool defaultVal = false)
     {
         if (!bools.ContainsKey(name))
         {
             //Debug.LogWarning("Couldn't find saved variable of name: " + name);
-            return false;
+            return defaultVal;
         }
         // add a null check here?
         return bools[name];
